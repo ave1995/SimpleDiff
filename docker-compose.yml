@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  mssql:
+    container_name: simple-diff-mssql
+    image: mcr.microsoft.com/azure-sql-edge
+    ports:
+      - "1433:1433"
+    restart: always
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Microsoft123456@"
+      MSSQL_PID: "Developer"

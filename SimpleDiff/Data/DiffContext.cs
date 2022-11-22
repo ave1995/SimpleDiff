@@ -16,6 +16,6 @@ namespace SimpleDiff.Data
             modelBuilder.Entity<DiffItem>().HasKey(table => new { table.Id, table.Type });
         }
 
-        public virtual DbSet<DiffItem> DiffItems { get; set; } = null!;
+        public DbSet<DiffItem> DiffItems { get; set; } = null!;
     }
 }
